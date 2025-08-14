@@ -1,0 +1,134 @@
+/* Global Styles */
+:root {
+    --primarycolor:#140163;
+    --secondarycolor:#3719b2; 
+    --white:#FFFFFF;
+    --h2-fontsize:2.5rem;
+    --h2-fontsize-phone:2rem;
+    --text-fontsize:1rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    margin: 2rem 0;
+    padding: .8rem 2rem;
+    border: 1px solid var(--primarycolor);
+    color: var(--primarycolor);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: var(--secondarycolor);
+    color: var(--white);
+}
+
+
+/*header*/
+.site-header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: .3rem 3rem;
+    color: var(--primarycolor);
+    height: 12vh;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); 
+}
+
+.site-logo h1{
+    font-size: 1.5rem;
+}
+
+.site-links ul {
+    list-style: none;
+    display: flex;
+    gap:2rem;
+
+}
+
+.site-links li a{
+    text-decoration: none;
+    color: var(--primarycolor);
+    font-size: 1.2rem;
+}
+
+.site-links li a:hover{
+    color:var(--secondarycolor);
+}
+
+/*main*/
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 2vh;
+    padding-top: 80vh;
+    background-image:url("/images/technologies-hand.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.hero-banner-box {
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+    color:var(--white);
+    background-color: rgba(3, 1, 20, 0.7);
+    padding: 2rem;
+    width: 50vw;
+    left: 28%;
+}
+
+.hero-banner-box h2 {
+    font-size: var(--h2-fontsize);
+    margin: 0;
+    padding: 0;
+}
+
+.hero-banner-box p {
+    font-size: var(--text-fontsize)
+}
+
+/*about section*/
+
+.about-section {
+    width: 100%;
+    margin: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-section h2{
+    font-size: var(--h2-fontsize);
+    margin: 1rem 0;
+}
+
+.about-section p{
+    width: 50vw;
+    font-size: var(--text-fontsize);
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--primarycolor);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
