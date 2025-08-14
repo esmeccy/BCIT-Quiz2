@@ -132,3 +132,90 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/*responsive design*/
+/*phone*/
+@media screen and (max-width: 600px) {
+    .site-header{
+         padding: 2rem;
+    }
+    .site-logo h1{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .site-links ul a{
+        font-size: 1.1rem;
+    }
+
+    .hero-banner-box{
+        width: 50vh;
+        top: 30vh;
+        left:15%;
+    }
+
+    .hero-banner-box h2 {
+        font-size: var(--h2-fontsize-phone);
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-banner-box p {
+        font-size: .9rem;
+    }
+
+    .about-section{
+        margin: 3rem 2rem;
+    }
+
+    .about-section h2 {
+        font-size: var(--h2-fontsize-phone);
+    }
+
+    .about-section p{
+        width: 70vw;
+    }
+}
+
+/*tablet*/
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+    .site-header{
+         padding: 2rem;
+    }
+    .site-logo h1{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .site-links ul a{
+        font-size: 1.1rem;
+    }
+
+    .hero-banner-box{
+        width: 60vh;
+        top: 40vh;
+        left:20%;
+    }
+
+    .hero-banner-box h2 {
+        font-size: var(--h2-fontsize-phone);
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-banner-box p {
+        font-size: .9rem;
+    }
+
+    .about-section{
+        margin: 3rem 2rem;
+    }
+
+    .about-section h2 {
+        font-size: var(--h2-fontsize-phone);
+    }
+
+    .about-section p{
+        width: 70vw;
+    }
+    }
